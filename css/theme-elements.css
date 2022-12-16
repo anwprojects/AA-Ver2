@@ -13023,7 +13023,7 @@ html.boxed .nav-secondary.sticky-active {
 .pricing-table .plan .plan-price,
 .pricing-table .plan .plan-features,
 .pricing-table .plan .plan-footer {
-	border: 1px solid #ededed;
+	border: 1px solid #f25822;
 }
 
 .pricing-table .plan .plan-header {
@@ -13047,9 +13047,9 @@ html.boxed .nav-secondary.sticky-active {
 .pricing-table .plan .plan-price {
 /*	display: flex;*/
 	flex-direction: column;
-	background: #f25822;
-	border-top: 0;
-	border-bottom: 0;
+/*	background: #f25822;*/
+	/*border-top: 0;
+	border-bottom: 0;*/
 	padding: 32px 12.8px;
 	padding: 2rem 0.8rem;
 	text-align: center;
@@ -13647,7 +13647,7 @@ section.section.section-height-2 {
 
 section.section.section-height-3 {
 	padding: 73.846px 0;
-	padding: 4.6153846154rem 0;
+	padding: 2.5rem 0;
 }
 
 section.section.section-height-4 {
