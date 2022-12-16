@@ -13,6 +13,7 @@
 	--secondary: #183f72;
 	--tertiary: #0281d7;
 	--quaternary: #383f48;
+	--newwhite: #fff;
 }
 
 a {
@@ -34,6 +35,11 @@ a:active {
 html .text-color-primary,
 html .text-primary {
 	color: #f25822 !important;
+}
+
+html .text-color-newwhite,
+html .text-newwhite {
+	color: #fff !important;
 }
 
 html .text-color-hover-primary:hover,
