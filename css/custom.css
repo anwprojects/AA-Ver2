@@ -14,3 +14,22 @@ html .btn-outline.btn-slide {
 	background-image: none;
 	border-color: #fff;
 }
+
+.price {
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none;
+      border: 1px solid #343436;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 1.4em;
+  }
+
+  .one {
+      margin-left: 0px;
+      margin-right: 0px;
+      padding: 5px 8px;
+      display: inline-block;
+      background: #f0f1f3;
+      color: #333436;
+    }

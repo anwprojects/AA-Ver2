@@ -13023,7 +13023,7 @@ html.boxed .nav-secondary.sticky-active {
 .pricing-table .plan .plan-price,
 .pricing-table .plan .plan-features,
 .pricing-table .plan .plan-footer {
-	border: 1px solid #f25822;
+	border: 3px solid #f25822;
 }
 
 .pricing-table .plan .plan-header {
