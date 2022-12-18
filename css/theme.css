@@ -10055,10 +10055,10 @@ a.text-light:focus, a.text-light:hover {
 
 /* #Footer */
 #footer {
-	background: #212529;
-	border-top: 4px solid #212529;
+	background: #fff;
+/*	border-top: 4px solid #212529;*/
 	font-size: 0.9em;
-	margin-top: 50px;
+/*	margin-top: 50px;*/
 	padding: 0;
 	position: relative;
 	clear: both;
