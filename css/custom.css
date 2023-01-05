@@ -51,68 +51,100 @@ html .btn-outline.btn-slide {
     margin-top:22px;
 }
 
-/*sticky enquiry form*/
 
-.sidebar-form {
-    position: fixed;
-    top: 50%;
-    right: -350px;
-    width: 350px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
-    border-radius: 8px 0 0 8px;
-    background-color: #fff;
-    padding: 20px;
-    transform: translateY(-50%);
-    transition: right .4s linear;
+/* ===================== Popup Contact FORM ========================*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
+@color-card-background: #2d3638;
+@color-tag-background: #191e20;
+@color-anchor: #e37544;
+@color-body-copy: #b9bcbd;
+@default-border-radius: 10px;
+@breakpoint-medium: "screen and (min-width: 700px)";
+
+#btnOpenForm{position:fixed; top:300px; right:-52px; cursor:pointer; z-index:99999; -ms-transform: rotate(90deg); transform: rotate(90deg); background: #f25822; border: none; color: #fff; font-size: 19px; padding: 5px 16px;}
+
+.form-popup-bg {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
-
-.sidebar-form .show {
-    right: 0
+.form-popup-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 110, 141, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  overflow-y: auto;
+  z-index: 10000;
 }
-
-.sidebar-form .call-action {
-    position: absolute;
-    background-color: darkred;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #fff;
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-    left: -95px;
-    top: 50%;
-    transform: translateY(-50px) rotate(-90deg);
+.form-popup-bg.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
 }
-
-.sidebar-form h3 {
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-bottom: 15px;
-    text-align: center;
-    color: darkred;
-}
-
-.sidebar-form .form-group {
-    margin-bottom: 10px;
-}
-
-.sidebar-form .form-group label {
-    font-size: 15px;
-    margin-bottom: 2px;
-    color: #333;
-}
-
-.sidebar-form #submit-btn {
+.form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    border: none;
-    background-color: #000;
-    color: #fff;
-    padding: 7px;
-    cursor: pointer;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+  padding: 40px;
+  color: #fff;
+}
+.close-button {
+  background:none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: solid 1px #fff;
 }
 
+.form-popup-bg:before{
+    content:'';
+    background-color: #fff;
+  opacity: .25;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* ===================== Popup Contact FORM ========================*/
+
+.fb-whatsapp{position: fixed; top:62%; z-index:99999; right: -6px;}
+.fb-whatsapp ul li{float:left; margin-right:10px; list-style: none;}
+.fb-whatsapp ul li img{width:37px;}
+
+@media only screen and (max-width:480px){
+    
+.fb-whatsapp{position: fixed; bottom:10px; z-index:99999; right: 100px;}
+.fb-whatsapp ul li{float:left; margin-right:10px; list-style: none;}
+.fb-whatsapp ul li img{width:40px;}
+}
 
 
 
